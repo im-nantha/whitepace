@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whitepace</title>
+    <meta name="description" content="Whitepace is one of the famous website for it services and consulting" />
+    <meta name="keywords" content="Whitepace, Whitepace site, Whitepace website" />
+    <meta property="og:title" content="Whitepace">
+    <meta property="og:description" content="Whitepace is one of the famous website for it services and consulting">
+    <meta property="og:url" content="https://im-nantha.github.io/whitepace/">
+    <meta property="og:image" content="https://im-nantha.github.io/Whitepace-website/assets/images/Whitepace.png">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="./assets/favicon.svg" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://im-nantha.github.io/whitepace/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet/less" type="text/css" href="./styles/style.less" />
+</head>
+
+<body>
+    <header class="whitepace-header-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 px-4 px-lg-5">
+            <div class="container-fluid px-0">
+              <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/whitepace-logo.svg" alt="logo"></a>
+              <div class="d-flex align-items-center gap-3">
+                <button class="custom-rounded navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse justify-content-center gap-2" id="navbarSupportedContent">
+                <ul class="navbar-nav mt-2 mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="#">New Releases</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Solutions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Business Solutions</a></li>
+                      <li><a class="dropdown-item" href="#">IT Solutions</a></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pricing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Plans</a></li>
+                      <li><a class="dropdown-item" href="#">offers</a></li>
+                    </ul>
+                  </li> 
+                </ul>
+                <form class="gap-3 d-flex d-lg-none">
+                  <button type="button" class="custom-rounded btn yellow-btn px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModalForm">Login</button>
+                  <button type="button" class="custom-rounded btn blue-btn ps-4 pe-3 py-2 text-nowrap" data-bs-toggle="modal" data-bs-target="#tryWhitepaceModal"><span class="pe-1">Try Whitepace Free</span> <i class="bi bi-arrow-right"></i></button>
+                </form>
+              </div>
+              <form class="gap-4 d-none d-lg-flex">
+                <button type="button" class="custom-rounded btn yellow-btn px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModalForm">Login</button>
+                <button type="button" class="custom-rounded btn blue-btn ps-4 pe-3 py-2 text-nowrap" data-bs-toggle="modal" data-bs-target="#tryWhitepaceModal"><span class="pe-1">Try Whitepace Free</span> <i class="bi bi-arrow-right"></i></button>
+              </form>
+            </div>
+            <!-- Login form -->
+            <div class="modal fade" id="loginModalForm" tabindex="-1" aria-labelledby="loginModalForm" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content px-3 py-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Login Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Username:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-password" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="recipient-password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Try whitepace -->
+            <div class="modal fade" id="tryWhitepaceModal" tabindex="-1" aria-labelledby="tryWhitepaceModal" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content px-3 py-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Login Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-number" class="col-form-label">Enter your mobile no.</label>
+                        <input type="tel" class="form-control" id="recipient-number">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="whitepace-main-wrapper">
+
+      <section class="whitepace-hero-banner">
+        <div class="py-5 primary-blue">
+          <div class="container-fluid px-0 my-2 my-lg-5 whitepace-banner-background px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pt-0 pt-lg-5 mt-0 mt-xxl-4">
+                  <h1 class="wp-banner-title color-white pb-4 text-center text-lg-start">Get More Done With Whitepace</h1>
+                  <p class="wp-banner-desc color-white pb-4 text-center text-lg-start">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button type="button" class="custom-rounded btn blue-btn ps-4 pe-3 py-3" data-bs-toggle="modal" data-bs-target="#tryWhitepaceModal"><span class="pe-1">Try Whitepace Free</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/main-banner.png" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-banner">
+        <div class="pt-5 primary-white">
+          <div class="container-fluid px-0 my-2 my-lg-5 whitepace-banner-background px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pt-0 pt-lg-5 mt-0 mt-xxl-4">
+                  <h1 class="wp-banner-title color-black pb-4 text-center text-lg-start">Project Management</h1>
+                  <p class="wp-banner-desc color-black pb-4 text-center text-lg-start">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Get Started</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/common/project-management.png" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-banner">
+        <div class="py-5 primary-white">
+          <div class="container-fluid px-0 my-2 my-lg-5 px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="order-lg-1 order-0 order-1 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pb-5 mt-0 mt-xxl-4">
+                  <h1 class="wp-banner-title color-black pb-4 text-center text-lg-start">Work Together</h1>
+                  <p class="wp-banner-desc color-black pb-4 text-center text-lg-start">With whitepace, share your notes with your colleagues and collaborate on them.
+                    You can also publish a note to the internet and share the URL with others.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Try it now</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="order-lg-0 order-1 col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/common/work-with.png" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="extension-banner">
+        <div class="py-5 primary-blue">
+          <div class="container-fluid px-0 my-2 my-lg-5 px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pt-0 pt-lg-5 mt-0 mt-xxl-4">
+                  <h1 class="wp-banner-title color-white pb-4 text-center text-lg-start">Use as Extension</h1>
+                  <p class="wp-banner-desc color-white pb-4 text-center text-lg-start">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Let's Go</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/common/use-extension.png" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customize-banner">
+        <div class="pt-5 primary-white">
+          <div class="container-fluid px-0 my-2 my-lg-5 whitepace-banner-background px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="order-1 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pt-0 pt-lg-5 mt-0 mt-xxl-4">
+                  <h1 class="wp-banner-title color-black pb-4 text-center text-lg-start">Customize it to your needs</h1>
+                  <p class="wp-banner-desc color-black pb-4 text-center text-lg-start">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Let's Go</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="order-0 col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/common/customize.png" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="select-plan py-4">
+        <div class="sp-title-wrapper px-4 px-lg-5">
+          <h1 class="wp-banner-title color-black pb-4 text-center">Choose Your Plan</h1>
+          <p class="wp-banner-desc color-black pb-4 text-center">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
+        </div>
+        <div class="container-fluid px-4 px-lg-5">
+          <div class="row gap-4 align-items-center justify-content-center">
+            <div class="col-12 col-sm-8 col-lg border-yellow px-4 py-4 custom-rounded">
+              <p class="text-semibold">Free</p>
+              <p class="ag-h4 pb-3 mb-0">$0</p>
+              <p class="ag-p2-medium">Capture ideas and find them quickly</p>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Sync unlimited devices</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>10 GB monthly uploads</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>200 MB max. note size</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Customize Home dashboard and access extra widgets</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Connect primary Google Calendar account</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Add due dates, reminders, and notifications to your tasks</p>
+              </div>
+              <button class="custom-rounded btn blue-btn ps-4 pe-4 py-2 color-black border-yellow primary-white">Get Started</button>
+            </div>
+            <div class="col-12 col-sm-8 col-lg card-shadow custom-rounded primary-blue color-white px-4 py-5">
+              <p class="text-semibold">Personal</p>
+              <p class="ag-h4 pb-3 mb-0">$11.99</p>
+              <p class="ag-p2-medium">Keep home and family on track</p>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>Sync unlimited devices</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>10 GB monthly uploads</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>200 MB max. note size</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>Customize Home dashboard and access extra widgets</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>Connect primary Google Calendar account</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle text-yellow"></i>
+                <p>Add due dates, reminders, and notifications to your tasks</p>
+              </div>
+              <div class="pt-2">
+                <button class="custom-rounded btn blue-btn ps-4 pe-4 py-2">Get Started</button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-lg border-yellow px-4 py-4 custom-rounded">
+              <p class="text-semibold">Organization</p>
+              <p class="ag-h4 pb-3 mb-0">$49.99</p>
+              <p class="ag-p2-medium">Capture ideas and find them quickly</p>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Sync unlimited devices</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>10 GB monthly uploads</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>200 MB max. note size</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Customize Home dashboard and access extra widgets</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Connect primary Google Calendar account</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check2-circle"></i>
+                <p>Add due dates, reminders, and notifications to your tasks</p>
+              </div>
+              <button class="custom-rounded btn blue-btn ps-4 pe-4 py-2 color-black border-yellow primary-white">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="your-work-container py-0 py-md-5">
+        <div class="two-backgrounds primary-white pt-5 position-relative">
+          <div class="py-5 primary-blue px-4 px-lg-5">
+            <img class="position-absolute img-fluid work-bg start-0" src="./assets/common/round-bg.png" alt="image">
+            <img class="position-absolute img-fluid work-bg end-0" src="./assets/common/right-standing.png" alt="image">
+            <div class="sp-title-wrapper">
+              <h1 class="wp-banner-title color-white pb-4 text-center">Your work, everywhere you are</h1>
+              <p class="wp-banner-desc color-white pb-4 text-center">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+              <div class="d-flex justify-content-center">
+                <button class="custom-rounded btn blue-btn ps-4 pe-3 py-3"><span class="pe-1">Try Taskey</span> <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="your-data-banner">
+        <div class="py-5 primary-white">
+          <div class="container-fluid my-2 my-lg-5 whitepace-banner-background px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper">
+                  <h1 class="wp-banner-title color-black pb-4 text-center text-lg-start">100% your data</h1>
+                  <p class="wp-banner-desc color-black pb-4 text-center text-lg-start">The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Read more</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper pt-5 pt-lg-0">
+                  <img class="img-fluid" src="./assets/common/your-data.svg" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsors pb-5">
+        <div class="sp-title-wrapper px-4 px-lg-5">
+          <h1 class="wp-banner-title color-black pb-4 text-center">Our sponsors</h1>
+        </div>
+        <div class="container-fluid px-4 px-lg-5 ">
+          <div class="row py-5 justify-content-between align-items-center gap-5">
+            <div class="col-3 col-md-1">
+              <div class="sponsor-image-wrapper">
+                <img class="img-fluid" src="./assets/sponsors/sponsor-apple.png" alt="image">
+              </div>
+            </div>
+            <div class="col-5 col-md-2">
+              <div class="sponsor-image-wrapper">
+                <img class="img-fluid" src="./assets/sponsors/sponsor-microsoft.png" alt="image">
+              </div>
+            </div>
+            <div class="col-5 col-md-2">
+              <div class="sponsor-image-wrapper">
+                <img class="img-fluid" src="./assets/sponsors/sponsor-slack.png" alt="image">
+              </div>
+            </div>
+            <div class="col-5 col-md-2">
+              <div class="sponsor-image-wrapper">
+                <img class="img-fluid" src="./assets/sponsors/sponsor-google.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="extension-banner">
+        <div class="py-5 primary-blue">
+          <div class="container-fluid px-0 my-2 my-lg-5 whitepace-banner-background px-4 px-lg-5">
+            <div class="row justify-content-between">
+              <div class="order-1 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 mb-4">
+                <div class="left-col-wrapper pt-5 pt-lg-0">
+                  <h1 class="wp-banner-title color-white pb-4 text-center text-lg-start">Work with Your Favorite Apps Using whitepace</h1>
+                  <p class="wp-banner-desc color-white pb-4 text-center text-lg-start">Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
+                  <div class="d-flex justify-content-center justify-content-lg-start">
+                    <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Read more</span> <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="order-0 col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-12">
+                <div class="right-col-wrapper">
+                  <img class="img-fluid" src="./assets/common/work-with-fav.svg" alt="image" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-client px-4 px-lg-5 pb-5 mb-5">
+        <div class="sp-title-wrapper py-5">
+          <h1 class="wp-banner-title color-black py-4 text-center">What Our Clients Says</h1>
+        </div>
+        <div class="container-fluid">
+          <div class="row gap-4 justify-content-center">
+            <div class="col-12 col-sm-8 col-lg card-shadow custom-rounded primary-white px-3 py-4">
+              <div class="quote-img-wrap">
+                <i class="bi bi-quote quote-img color-blue"></i>
+              </div>
+              <p class="ag-p2-regular">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+              <hr class="mt-4">
+              <div class="client-content gap-3 d-flex pt-4">
+                <div class="client-img-wrap">
+                  <img src="./assets/avatars/avatar-1.svg" alt="image">
+                </div>
+                <div class="client-data">
+                  <p class="text-semibold mb-2">Oberon Shaw, MCH</p>
+                  <p>Head of Talent Acquisition, North America</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-lg card-shadow custom-rounded primary-blue px-3 py-4">
+              <div class="quote-img-wrap">
+                <i class="bi bi-quote quote-img color-white"></i>
+              </div>
+              <p class="ag-p2-regular color-white">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+              <hr class="mt-4">
+              <div class="client-content gap-3 d-flex pt-4">
+                <div class="client-img-wrap">
+                  <img src="./assets/avatars/avatar-2.png" alt="image">
+                </div>
+                <div class="client-data">
+                  <p class="color-white text-semibold mb-2">Hendry, MCH</p>
+                  <p class="color-white">Head of Talent Acquisition, South America</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-8 col-lg card-shadow custom-rounded primary-blue px-3 py-4">
+              <div class="quote-img-wrap">
+                <i class="bi bi-quote quote-img color-white"></i>
+              </div>
+              <p class="ag-p2-regular color-white">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+              <hr class="mt-4">
+              <div class="client-content gap-3 d-flex pt-4">
+                <div class="client-img-wrap">
+                  <img src="./assets/avatars/avatar-3.png" alt="image">
+                </div>
+                <div class="client-data">
+                  <p class="color-white text-semibold mb-2">Micheal, MCH</p>
+                  <p class="color-white">Head of Talent Acquisition, texas, America</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wp-faq">
+        <div class="sp-title-wrapper px-4 px-lg-5">
+          <h1 class="wp-banner-title color-black pb-4 text-center">FAQ's</h1>
+        </div>
+        <div class="accordion px-4 px-lg-5 pb-5 mt-4" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1. What types of offers do you provide?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We offer a range of specialized offers designed to meet diverse business needs. Our offerings include tailored solutions for [specific industry needs], comprehensive packages for [specific business goals], and customizable plans to optimize [specific business processes]. Each offer is crafted to deliver measurable results and enhance operational efficiency.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2. How does your project management service benefit my business?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Our project management service is designed to streamline workflows, ensure project delivery within deadlines, and optimize resource allocation. By leveraging industry-leading methodologies and experienced project managers, we guarantee efficient project execution, risk mitigation, and cost control.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. How can we collaborate with your team?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Collaborating with us is seamless and tailored to your preferences. We offer various engagement models, including project-based partnerships, ongoing consultancy, and strategic advisory services. Our approach emphasizes transparency, open communication, and a collaborative mindset to foster a productive working relationship.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                4. What industries do your offers cater to?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Our offers are versatile and cater to a wide range of industries, including but not limited to [list specific industries]. Whether you're in [industry 1], [industry 2], or [industry 3], our solutions are designed to address industry-specific challenges and maximize opportunities for growth and efficiency.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                5. Can you provide examples of successful projects you've managed?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Absolutely! We've successfully managed projects across various domains, such as [example project 1], [example project 2], and [example project 3]. These projects highlight our ability to deliver tangible results, meet client expectations, and adapt to dynamic business environments. Visit our case studies section to learn more about our successful collaborations and the outcomes achieved.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed color-blue text-semibold mb-2 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                6. What sets your company apart in the market?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Several factors distinguish us in the market:
+                  <ul>
+                    <li><strong>Expertise:</strong> Our team comprises seasoned professionals with extensive industry knowledge and hands-on experience.</li>
+                    <li><strong>Customization:</strong> We offer tailored solutions that align with each client's unique requirements and business objectives.</li>
+                    <li><strong>Customer-centric Approach:</strong> We prioritize client satisfaction, proactive communication, and ongoing support throughout every engagement.</li>
+                    <li><strong>Innovation:</strong> We leverage cutting-edge technologies and best practices to drive innovation and deliver value-added solutions.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="whitepace-footer-wrapper primary-blue color-white pb-4 px-4 px-lg-5">
+      <div class="footer-head text-center py-5">
+        <h1 class="wp-banner-title pt-5">Try Whitepace</h1>
+        <h1 class="wp-banner-title pb-3">today</h1>
+        <p class="wp-banner-desc mb-0">Get started for free.</p>
+        <p class="wp-banner-desc pb-3">Add your whole team as your needs grow.</p>
+        <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Try Taskey free</span> <i class="bi bi-arrow-right"></i></button>
+        <p class="wp-banner-desc py-3">on a big team? contact sales</p>
+        <div class="footer-head-icons pt-3 d-flex justify-content-center gap-4 align-items-center">
+          <a class="footer-icon-wrap" href="https://www.apple.com/" target="_blank">
+            <img class="img-fluid" src="./assets/footer/footer-apple.svg" alt="icons">
+          </a>
+          <a class="footer-icon-wrap" href="https://www.microsoft.com/en-in/windows/?r=1" target="_blank">
+            <img class="img-fluid" src="./assets/footer/footer-windows.png" alt="icons">
+          </a>
+          <a class="footer-icon-wrap" href="https://www.android.com/" target="_blank">
+            <img class="img-fluid" src="./assets/footer/footer-android.png" alt="icons">
+          </a>
+        </div>
+      </div>
+      <div class="footer-body py-5">
+        <div class="container-fluid">
+          <div class="row flex-column flex-lg-row text-center text-md-auto">
+            <div class="col d-flex flex-column align-items-center d-lg-block">
+              <div class="navbar-brand">
+                <img src="./assets/whitepace-logo.svg" alt="image">
+              </div>
+              <p class="wp-banner-desc fw-200">whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-unstyled d-flex flex-column gap-3 gap-lg-1">
+                <li><a class="text-decoration-none color-white wp-banner-desc" href="#"><b>Product</b></a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Overview</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Pricing</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Customer stories</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-unstyled d-flex flex-column gap-3 gap-lg-1">
+                <li><a class="text-decoration-none color-white wp-banner-desc" href="#"><b>Resources</b></a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Blog</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Guides & tutorials</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Help center</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled d-flex flex-column gap-3 gap-lg-1">
+                <li><a class="text-decoration-none color-white wp-banner-desc" href="#"><b>Company</b></a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">About us</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Careers</a></li>
+                <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Media kit</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="ag-h5">Try It Today</p>
+              <p class="wp-banner-desc fw-200">Get started for free. Add your whole team as your needs grow.</p>
+              <button class="custom-rounded btn blue-btn ps-4 pe-4 py-3"><span class="pe-1">Start today</span> <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-terms pt-4 d-flex justify-content-between align-items-center flex-column flex-lg-row gap-4">
+        <div class="ft-left align-items-center">
+          <ul class="d-flex list-unstyled gap-3 gap-lg-5 mb-0 flex-column flex-sm-row text-center text-sm-start">
+            <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">English</a></li>
+            <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Terms and Privacy</a></li>
+            <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Security</a></li>
+            <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">Status</a></li>
+            <li><a class="text-decoration-none color-white wp-banner-desc fw-200" href="#">©2021 Whitepace LLC.</a></li>
+          </ul>
+        </div>
+        <div class="ft-right">
+          <div class="footer-body-icons d-flex gap-5">
+              <a class="footer-fb" href="https://www.facebook.com/" target="_blank">
+                <img class="img-fluid custom-fluid" src="./assets/footer-icons/mini-facebook.svg" alt="icons">
+              </a>
+              <a class="footer-twitter" href="https://www.twitter.com/" target="_blank">
+                <img class="img-fluid custom-fluid" src="./assets/footer-icons/mini-twitter.svg" alt="icons">
+              </a>
+              <a class="footer-linkedin" href="https://www.linkedin.com/" target="_blank">
+                <img class="img-fluid custom-fluid" src="./assets/footer-icons/mini-linkedin.svg" alt="icons">
+              </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</body>
+
+</html>
