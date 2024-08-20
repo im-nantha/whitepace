@@ -1,6 +1,6 @@
 # Whitepace Project
 
-This is a personal frontend training project created using HTML, LSS, and BOOTSTRAP 5 CSS FRAMEWORK.
+This is a personal frontend training project created using HTML, LESS, and BOOTSTRAP 5 CSS FRAMEWORK.
 
 ## Description
 
@@ -13,7 +13,7 @@ All images and designs used in this project are copyright to their respective ow
 ## Technologies Used
 
 - HTML
-- CSS
+- LESS
 - BOOTSTRAP 5
 
 ## Usage
